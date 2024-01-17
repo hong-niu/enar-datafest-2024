@@ -6,7 +6,7 @@ Entry for the 2024 ENAR Datafest.
 
 PDF of submission report can be found in /report/. 
 
-## Code dependencies
+## Code Dependencies and Requirements
 
 The main dependencies for this project are LLaMA-Factory (https://github.com/hiyouga/LLaMA-Factory), used for the fine-tuning of LLM models, as well as the scikit-learn package to perform comparisons to traditional classification and regression models. 
 
