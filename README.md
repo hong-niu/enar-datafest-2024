@@ -8,7 +8,7 @@ PDF of submission report can be found in /report/.
 
 ## Code Dependencies and Requirements
 
-The main dependencies for this project are LLaMA-Factory (https://github.com/hiyouga/LLaMA-Factory), used for the fine-tuning of LLM models, as well as the scikit-learn package to perform comparisons to traditional classification and regression models. 
+The main dependencies for this project are LLaMA-Factory (https://github.com/hiyouga/LLaMA-Factory), used for the fine-tuning of LLM models, as well as the scikit-learn package to perform comparisons to traditional classification and regression models. All experiments were performed either on an A100 (40 GB) GPU, which was necessary for training LLM's greater than roughly 7B parameters, or desktop RTX 4080 (16 GB) GPU. 
 
 ## Data Preprocessing
 
