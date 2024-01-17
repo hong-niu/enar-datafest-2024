@@ -42,6 +42,7 @@ After preprocessing the input data into the respective JSON files, fine-tuning c
       --overwrite_output_dir \
       --cache_dir /cache/directory
 
+Specific parameters for our experiments can be found in the run_qwen_train.sh script. 
 
 
 ## Colab 
