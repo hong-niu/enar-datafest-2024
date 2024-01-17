@@ -14,4 +14,4 @@ The core data comes from the aggregated NHANES survey data from the CardioStatsU
 
 
 ## Colab 
-For ease of use, we prepared a completely self-contained Colab notebook with a demonstration of loading LLM models using LLaMA-Factory 
+For ease of use, we prepared a completely self-contained Colab notebook with a demonstration of loading and querying LLM models using LLaMA-Factory. 
