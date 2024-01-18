@@ -8,7 +8,18 @@ PDF of submission report can be found in /report/.
 
 ## Code Dependencies and Requirements
 
-The main dependencies for this project are LLaMA-Factory (https://github.com/hiyouga/LLaMA-Factory), used for the fine-tuning of LLM models, as well as the scikit-learn package to perform comparisons to traditional classification and regression models. All experiments were performed either on an A100 (40 GB) GPU, which was necessary for training LLM's greater than roughly 7B parameters, or desktop RTX 4080 (16 GB) GPU. 
+The main dependencies for this project are LLaMA-Factory (https://github.com/hiyouga/LLaMA-Factory), used for the fine-tuning of LLM models, as well as the scikit-learn package to perform comparisons to traditional classification and regression models. All experiments were performed either on an A100 (40 GB) GPU, which was necessary for training LLM's greater than roughly 7B parameters, or desktop RTX 4080 (16 GB) GPU. Running the code requires cloning the LLaMA-Factory repo and installing the required dependencies. 
+
+## Code Layout
+
+The /code directory contains 4 scripts used for the project as follows: 
+
+    /code/  01-data-preprocessing.R 
+            02-run_qwen_train.sh 
+            03-use_model.py  
+            04-traditional_comps.ipynb
+
+01 Contains preprocessing steps such as restricting to patients with hypertension and generating the natural language prompts for input into LLM fine tuning. 02 contains the input and hyperparameters used for LLaMA-Factory fine-tuning. 03 contains code for prompting the retrained model and 04 contains a notebook for performing comparisons to traditional classification models. 
 
 ## Data Preprocessing
 
@@ -42,8 +53,6 @@ After preprocessing the input data into the respective JSON files, fine-tuning c
       --overwrite_output_dir \
       --cache_dir /cache/directory
 
-Specific parameters for our experiments can be found in the run_qwen_train.sh script. 
+Specific parameters for our experiments can be found in the /code/02-run_qwen_train.sh script. 
 
 
-## Colab 
-For ease of use, we prepared a completely self-contained Colab notebook with a demonstration of loading and querying LLM models using LLaMA-Factory. 
